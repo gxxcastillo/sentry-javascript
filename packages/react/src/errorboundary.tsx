@@ -36,6 +36,7 @@ export type ErrorBoundaryProps = {
    *
    */
   fallback?: React.ReactElement | FallbackRender;
+  children: React.ReactNode;
   /** Called when the error boundary encounters an error */
   onError?(error: Error, componentStack: string, eventId: string): void;
   /** Called on componentDidMount() */
